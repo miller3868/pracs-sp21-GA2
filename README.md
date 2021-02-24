@@ -44,4 +44,31 @@ This is a repository for my second assignment.
 
 `git commit -m "Made .gitignore file"` 
 
+Went up to assignment file to add and commit changes to the README.md file: `cd ../..` 
+
+`git add README.md`
+
+`git commit -m "Updated README file"`
+
+## Load Conda and Cutadapt:
+
+`module load python/3.6-conda5.2`
+
+Configured channels like we did in class:
+
+conda config --add channels defaults
+
+conda config --add channels bioconda
+
+conda config --add channels conda-forge
+
+conda config --get channels #Used to check priorities
+
+`conda create -n cutadapt-env cutadapt` #This creates the new environment with cutadapt installed. I did this in class so didn't need to do it again here. 
+
+`source activate cutadapt-env` #This activates the cutadapt environment
+
+`cutadapt --version` #This checks to make sure it works. 
+
+`conda env export -n Cutadapt > environment.yml` #This exports the environment description to a YAML file. 
 
