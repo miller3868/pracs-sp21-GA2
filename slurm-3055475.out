@@ -1,0 +1,12 @@
+Forward read file data/FASTQ/201-S4-V4-V5-S53_L001_R1_001.fastq
+Output directory /fs/ess/PAS1855/users/miller3868/week06/pracs-sp21-GA2/results/trim
+Forward primer GAGTGYCAGCMGCCGCGGTAA
+Reverse primer TTACCGCGGCKGCTGRCACTC
+Trimmed forward read /fs/ess/PAS1855/users/miller3868/week06/pracs-sp21-GA2/results/trim/201-S4-V4-V5-S53_L001_R1_001_trimmed.fastq
+Trimmed reverse read /fs/ess/PAS1855/users/miller3868/week06/pracs-sp21-GA2/results/trim/201-S4-V4-V5-S53_L001_R2_001_trimmed.fastq
+This is cutadapt 3.2 with Python 3.8.8
+Command line parameters: -a GAGTGYCAGCMGCCGCGGTAA...GAGTGYCAGCMGCCGCGGTAA -A TTACCGCGGCKGCTGRCACTC...TTACCGCGGCKGCTGRCACTC --discard-untrimmed --pair-filter=any -o /fs/ess/PAS1855/users/miller3868/week06/pracs-sp21-GA2/results/trim/201-S4-V4-V5-S53_L001_R1_001_trimmed.fastq -p /fs/ess/PAS1855/users/miller3868/week06/pracs-sp21-GA2/results/trim/201-S4-V4-V5-S53_L001_R2_001_trimmed.fastq data/FASTQ/201-S4-V4-V5-S53_L001_R1_001.fastq data/FASTQ/201-S4-V4-V5-S53_L001_R2_001.fastq
+Run "cutadapt --help" to see command-line options.
+See https://cutadapt.readthedocs.io/ for full documentation.
+
+cutadapt: error: [Errno 2] No such file or directory: 'data/FASTQ/201-S4-V4-V5-S53_L001_R1_001.fastq'

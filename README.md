@@ -72,3 +72,24 @@ conda config --get channels #Used to check priorities
 
 `conda env export -n Cutadapt > environment.yml` #This exports the environment description to a YAML file. 
 
+git add and git commit YAML file
+
+`source deactivate` 
+
+## Cutadapt script for one sample:
+
+`sinteractive -A PAS1855 -t 20` #provide instructions to the SLURM scheduler to specify the resources (cores/memory/time/etc) needed (20 min specified above)
+
+`sbatch -A PAS1855 -t 20 cutadaptsingle.sh "$f_read" "$output_dir" "$forward_primer" "$reverse_primer"` #Execute the script
+
+`squeue -u $USER`  #Check on the job status
+
+`less slurm-3054013.out` #Check output. This brings up the file in the terminal and I don't know how to get out of it. 
+
+`ls -lh $output_dir`  #Check output directory
+
+`git add --all` 
+
+`git commit -m "Update and add all new files"` #Add and commit all files and changes 
+
+
